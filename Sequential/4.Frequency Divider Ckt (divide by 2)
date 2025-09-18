@@ -1,0 +1,13 @@
+module freq_divide_by_two (output q,qbar, input din, clk, rst);
+  reg q;
+  
+  always@(posedge clk) begin
+    if (!rst)
+      q <= 0;
+    else
+      q <= ~q;
+  end
+  
+  assign din = ~q;
+  assign qbar = ~q;
+endmodule
