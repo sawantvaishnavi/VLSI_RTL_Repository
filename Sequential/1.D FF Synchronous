@@ -1,0 +1,10 @@
+module d_ff_synchronous (output q, input din, clk, resetn);
+  reg q;
+  
+  always @ (posedge clk) begin
+    if (!resetn)
+      q <= 0;
+    else
+      q <= din;
+  end
+endmodule
