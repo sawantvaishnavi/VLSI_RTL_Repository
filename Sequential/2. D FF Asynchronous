@@ -1,3 +1,5 @@
+//Asynchronous D ff with active low reset
+
 module d_ff_asynchronous (output q, input din, clk, resetn);
   reg q;
   
