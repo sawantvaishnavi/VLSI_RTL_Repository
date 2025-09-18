@@ -1,0 +1,11 @@
+module jk_ff (input j, k, resetn, clk, output reg q );
+  
+  always@(posedge clk or negedge resetn) begin
+    if (!resetn) begin
+      q <= 0;
+      
+    end else begin
+      q <= (j & ~q) | (~k & q);
+    end
+ end
+endmodule
