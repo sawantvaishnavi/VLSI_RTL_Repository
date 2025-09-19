@@ -1,11 +1,11 @@
-\\ Reference clock: 100 MHz (`clk`)
-\\- Parameterized secondary clock (`clk50`)
-\\  - Adjustable frequency (Hz)
- \\ - Duty cycle (0.0 – 1.0)
- \\ - Phase shift (ns)
-\\- Utility tasks:
- \\ - `calc` – computes `ton`, `toff`, and phase
-  \\- `clkgen` – generates the programmable clock waveform
+// - Reference clock: 100 MHz (`clk`)
+// - Parameterized secondary clock (`clk50`)
+//   - Adjustable frequency (Hz)
+//   - Duty cycle (0.0 – 1.0)
+//   - Phase shift (ns)
+// - Utility tasks:
+//    - `calc` – computes `ton`, `toff`, and phase
+//    - `clkgen` – generates the programmable clock waveform
 
 
 `timescale 1ns / 1ps
