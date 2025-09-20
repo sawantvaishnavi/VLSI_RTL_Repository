@@ -4,7 +4,7 @@ module full_adder (input in1, in2, in3, output sum, carry);
   assign carry = (in1 & in2) | (in2 & in3) | (in1 & in3);
 endmodule
 
-
+//testbench
 module tb;
   reg in1;
   reg in2;
