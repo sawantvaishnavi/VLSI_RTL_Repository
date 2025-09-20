@@ -1,9 +1,11 @@
+
 module tb();
   
   reg [3:0] x;
   reg [39:0] y = "Hello";
   time current_time;
   real float_value ;
+  real freq;
  
   
   initial begin
@@ -21,10 +23,11 @@ module tb();
     $display ("y = %s", y);      //Display as a string
     
     
-    #200; current_time = $time;
+    #200 current_time = $time;
+    $display("Current time = %t",current_time);      //Display in time format
 
     $display ("float_value = %f", float_value);          
-    $display ("float_value = %0.3f", float_value);       
+    $display ("float_value = %0.2f", float_value);       
 
     $display ("float_value = %e", float_value);       // converting float_value into exponential format
 
@@ -37,3 +40,4 @@ module tb();
     $dumpvars;
   end
 endmodule
+
