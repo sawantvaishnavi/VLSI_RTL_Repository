@@ -32,6 +32,9 @@ module tb();
     $display ("float_value = %e", float_value);       // converting float_value into exponential format
 
     $display ("Value of freq = %0d", freq);        //conversion of exponential value into decimal
+
+   
+    $display("value of x = 'd%0d 0x%0h", x, x);   // If you want both decimal and hex of the same variable, pass the same variable twice.
     
   end
   
