@@ -1,4 +1,4 @@
-//Normal counter
+//1.Normal counter
 module counter (input clk, rst, output  reg [3:0] count) ;
  
   initial count =0; 
@@ -31,6 +31,22 @@ module tb ();
   initial begin
    $monitor("Count = %0d", count);
   end
+
+
+ //2.Count between 10 to 15
+ module counter (input clk, rst, output  reg [3:0] count) ;
+ 
+  initial count =0; 
+  always@(posedge clk) begin
+    
+    if (rst)
+      count <= 4'd10;
+    else if (count == 4'd15)
+      count <= 4'd10;
+    else
+      count <= count + 1;
+  end
+endmodule
   
   initial begin
     #400 $finish;
