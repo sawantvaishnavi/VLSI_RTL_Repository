@@ -33,13 +33,13 @@ module synchronous_fifo #
         if (wr_en && !full) begin
           fifo[wr_ptr] <= d_in;
           wr_ptr 	   <= (wr_ptr + 1) % DEPTH;
-          count		   <= count - 1;
+          count		   <= count + 1;
         end 
         
         if (rd_en && !empty) begin
           d_out <= fifo [rd_ptr];
           rd_ptr <= (rd_ptr + 1) % DEPTH;	
-          count  <= count + 1;
+          count  <= count - 1;
         end
       end
   end
