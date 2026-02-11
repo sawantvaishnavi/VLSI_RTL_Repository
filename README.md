@@ -11,7 +11,8 @@ A structured RTL design portfolio showcasing synthesizable Verilog implementatio
 - [Sequential](./Sequential)  
   
 
-- [Counter and Shift Registers](./Counter%20and%20Shift%20Registers)  
+- [Counter and Shift Registers](./Counter%20and%20Shift%20Registers)
+
  
 
 - [FSM](./FSM)  
